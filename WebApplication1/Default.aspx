@@ -265,7 +265,7 @@
                                 </div>
                                 <figcaption>
                                 <h4>
-                                <a href="http://cmccert.iil.intel.com/Certification.php">
+                                <a href="ShiftFeedback.aspx">
                                     Shift Feedback
                                 </a>
                                 </h4>

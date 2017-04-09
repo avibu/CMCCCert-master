@@ -12,11 +12,7 @@ namespace WebApplication1
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            WindowsIdentity identity = HttpContext.Current.Request.LogonUserIdentity;
-            string userName = identity.Name;
-           string[] test =userName.Split('\\');
-            userName = test[1];
-            username.Text = "Hello " +userName;
+            username.Text = "Hello " +Handler.getUserName();
 
         }
     }
