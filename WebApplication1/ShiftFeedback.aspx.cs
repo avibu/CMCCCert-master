@@ -13,6 +13,7 @@ namespace WebApplication1
         protected void Page_Load(object sender, EventArgs e)
         {
             string shifts = null;
+            int feedbacksToWrite = 0;
             List<Shift> shiftList = new List<Shift>();
 
             string shiftManager = Handler.getUserName();
@@ -26,16 +27,21 @@ namespace WebApplication1
                 while (rdr.Read())
                 {
                     TableRow tRow = new TableRow();
+                    feedbacksToWrite++;
                     myTable.Rows.Add(tRow);
                     for (int i =0; i <= 3; i++)
                     {
                         // Create a new cell and add it to the row.
                         TableCell tCell = new TableCell();
                         tCell.Text = rdr.GetString(i);
+                        tCell.Attributes.Add("onmouseover", "this.style.cursor = 'pointer'; this.style.backgroundImage = ''; ");
+                        tCell.Attributes.Add("onClick", "window.open(\"Default.aspx\")");
                         tRow.Cells.Add(tCell);
                     }
                     /* iterate once per row */
                 }
+                FeedbacksToWrite.Text = ""+feedbacksToWrite;
+                feedbacksToWrite = 0;
             }
         }
     }

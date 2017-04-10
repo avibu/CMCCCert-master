@@ -169,14 +169,24 @@
                                 <div class="col-md-6">
                                     <div class="block wow fadeInUp animated" data-wow-duration="400ms" data-wow-delay="600ms">
                                         <i class="ion-ios-paper-outline"></i>
-                                        <h4>BRANDING</h4>
-                                        <p>Veritatis eligendi, dignissimos. Porta fermentum mus aute pulvinar earum minus platea massa feugiat rutrum urna facilisi ipsameum.</p>
+                                        <div>
+                                        
+                                        <h1 class="wow fadeInUp animated cd-headline slide" data-wow-delay=".4s" >
+                                            <span class="cd-words-wrapper">
+                                            <b class="is-visible"><asp:Label runat="server" ID="FeedbacksToWrite"> Font-Bold="true" </asp:Label></b>  
+                                                <b>Feedbacks to write!</b>
+                                            </span>
+                                            </h1>
+                                            <h4>Feedbacks to write</h4>
+                                         </div>
+                                        <p>It is very important to have a feedback loop, where you’re constantly thinking about what you’ve done and how you could be doing it better.                                           
+                                        </p>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="block wow fadeInUp animated" data-wow-duration="400ms" data-wow-delay="800ms">
                                         <i class="ion-ios-pint-outline"></i>
-                                        <h4>DESIGN</h4>
+                                        <h4>Feedback to reads</h4>
                                         <p>Veritatis eligendi, dignissimos. Porta fermentum mus aute pulvinar earum minus platea massa feugiat rutrum urna facilisi ipsameum.</p>
                                     </div>
                                 </div>
@@ -207,16 +217,13 @@
        data-select-item-name="myRadioName"> 
           
     <asp:TableRow> 
-        <asp:TableCell>Shift Date</asp:TableCell>
-        <asp:TableCell>Shift Manager</asp:TableCell>
-        <asp:TableCell>Joiner</asp:TableCell>
-        <asp:TableCell>Type</asp:TableCell>
+        <asp:TableCell Font-Bold="true">Shift Date</asp:TableCell>
+        <asp:TableCell Font-Bold="true">Shift Manager</asp:TableCell>
+        <asp:TableCell Font-Bold="true">Joiner</asp:TableCell>
+        <asp:TableCell Font-Bold="true">Type</asp:TableCell>
     </asp:TableRow>
 </asp:Table>  
  </div>
-
-
-
 
         <!-- 
         ================================================== 
